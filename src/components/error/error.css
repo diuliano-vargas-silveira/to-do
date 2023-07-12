@@ -1,0 +1,23 @@
+.error {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 7rem;
+}
+
+.error > img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.error > h2,
+.error > p {
+  color: var(--gray-300);
+  font-size: 1rem;
+  line-height: 140%;
+  text-align: center;
+}

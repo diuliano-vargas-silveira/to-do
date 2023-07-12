@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+  background-color: var(--gray-700);
+}
+
+.header > img {
+  margin: 5rem auto;
+}

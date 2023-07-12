@@ -1,0 +1,110 @@
+.list {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 1.5rem;
+  padding-left: 0;
+
+  list-style: none;
+
+  gap: 0.75rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  padding: 1rem;
+  gap: 1.5rem;
+  border-radius: 8px;
+
+  border: 1px solid var(--gray-400);
+  background-color: var(--gray-500);
+}
+
+.item > p {
+  width: 100%;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 140%;
+
+  color: var(--gray-100);
+}
+
+.item > button {
+  cursor: pointer;
+  padding: 4px;
+  height: 24px;
+
+  border: 0;
+  background-color: transparent;
+
+  transition: 0.15s ease;
+}
+
+.item > button:hover {
+  fill: var(--feedback-error);
+  border-radius: 4px;
+  background-color: var(--gray-400);
+}
+
+.item > button:hover > .icon {
+  fill: var(--feedback-error);
+}
+
+.item > .icon {
+  fill: var(--gray-300);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  appearance: none;
+
+  border: 3px solid var(--blue);
+  background-color: transparent;
+  border-radius: 999px;
+
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.checkbox:hover {
+  border: 3px solid var(--blue-dark);
+  background-color: var(--blue-dark-hover);
+}
+
+.checkbox > input {
+  display: none;
+}
+
+.checkbox .iconCheck {
+  display: none;
+}
+
+.checked > .checkbox {
+  background-color: var(--purple-dark);
+  border: 3px solid var(--purple-dark);
+  appearance: none;
+  border-image: initial;
+}
+
+.checked .iconCheck {
+  display: block;
+}
+
+.checked > p {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.checked > .checkbox:hover {
+  background-color: var(--purple);
+  border: 3px solid var(--purple);
+}
